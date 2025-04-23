@@ -33,10 +33,10 @@ headers = {
     "sec-fetch-mode": "cors",
     "sec-fetch-site": "same-origin",
     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
-    "username": url
+    "username": rob2n
 }
-views = 0
-def test():
+views = 100
+def test(100):
     global url, headers, views
     while True:
         prox = random.choice(open("proxies.txt").read().splitlines())
@@ -50,11 +50,11 @@ def test():
             # print("https://cfx.re/join/"+test)
             response = scraper.post("https://guns.lol/api/view/"+url, headers=headers, proxies=proxyDict)
             if response.status_code == 200:
-                views+=1
+                views+=100
                 print("Vues total : "+str(views))
         except Exception as e:
             pass
 
 with ThreadPoolExecutor(max_workers=301) as exc:
     for i in range(300):
-        exc.submit(test)
+        exc.submit

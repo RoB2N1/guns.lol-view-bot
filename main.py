@@ -9,7 +9,7 @@ banner=""" ▄▄ • ▄• ▄▌ ▐ ▄ .▄▄ ·   ▄▄▌        ▄▄
 ·▀▀▀▀  ▀▀▀ ▀▀ █▪ ▀▀▀▀ ▀ .▀▀▀  ▀█▄▀▪.▀▀▀   . ▀  ▀▀▀ ▀▀▀  ▀▀▀▀ ▀▪·▀▀▀▀  ▀█▄▀▪ ▀▀▀ 
 """
 print(banner)
-url = input("Votre pseudo guns.lol > ")
+url = input("rob2n > ")
 headers = {
     #"cookie": "security_token=6d647174d809ee80e2ad14f80fe07cb5c2c1517d5ea72a7401b403eb5ead5c2e",
     "accept": "*/*",
@@ -35,7 +35,7 @@ headers = {
     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
     "username": url
 }
-views = 0
+views = 100
 def test():
     global url, headers, views
     while True:
